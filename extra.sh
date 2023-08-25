@@ -13,8 +13,6 @@ alsa-plugins
 alsa-utils
 arc-gtk-theme
 arch-install-scripts
-base
-base-devel
 bash-completion
 bat
 bind
@@ -95,14 +93,6 @@ libpwquality
 libusb-compat
 libva-intel-driver
 libva-mesa-driver
-linux
-linux-atm
-linux-firmware
-linux-firmware-marvell
-linux-firmware-qlogic
-linux-headers
-linux-lts
-linux-lts-headers
 logrotate
 lsb-release
 lsd
