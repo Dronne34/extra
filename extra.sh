@@ -306,4 +306,9 @@ sublime-text-4
 
 trizen -S --noconfirm  --noedit "${aur[@]}"
 
-echo  -e "$GREEN Install from AUR done"
+echo  -e "$GREEN Install from AUR done" & sleep 1
+
+echo  -e "$GREEN Restore config from Github"
+git clone https://github.com/Dronne34/config .config
+git clone https://github.com/Dronne34/home home
+git clone https://github.com/Dronne34/.fonts
