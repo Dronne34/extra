@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 echo  
 tput setaf 3
 echo "List of packages to install" & sleep 1
