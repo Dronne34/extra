@@ -260,7 +260,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xterm
+xdotool
 yad
 yt-dlp
 ytfzf
