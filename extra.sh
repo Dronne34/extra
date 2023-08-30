@@ -48,7 +48,6 @@ fatresize
 feh
 ffmpegthumbnailer
 file-roller
-firefox
 fsarchiver
 fzf
 garcon
@@ -296,21 +295,15 @@ for package in "${packages[@]}"; do
     fi
 done
 
-
-# Update the package database and install the packages
-# sudo pacman -Syu --noconfirm
-# sudo pacman -S --noconfirm "${packages[@]}"
-# echo  "Packages install done"  & sleep 1
-
 # Install trizen
-# echo  -e "$GREEN Clone trizen for install \n"  & sleep 1
-# echo  -e "$RED Remove older folder \n"  & sleep 1
-# rm -rf trizen
-# git clone https://aur.archlinux.org/trizen.git
-# cd trizen
-# makepkg -fsi --noconfirm
-# cd
-# echo  -e "$GREEN Trizen done"
+echo  -e "$GREEN Clone trizen for install \n"  & sleep 1
+ echo  -e "$RED Remove older folder \n"  & sleep 1
+ rm -rf trizen
+ git clone https://aur.archlinux.org/trizen.git
+ cd trizen
+ makepkg -fsi --noconfirm
+ cd
+ echo  -e "$GREEN Trizen done"
 
 #Install from AUR
 echo -e "$GREEN Install from AUR"  & sleep 1
