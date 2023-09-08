@@ -6,10 +6,6 @@ tput sgr0
 echo
 packages=(
 accountsservice
-adobe-source-han-sans-cn-fonts
-adobe-source-han-sans-jp-fonts
-adobe-source-han-sans-kr-fonts
-adobe-source-sans-fonts
 alacritty
 alsa-firmware
 alsa-plugins
@@ -25,6 +21,7 @@ bluez-libs
 bluez-utils
 broadcom-wl-dkms
 btrfs-progs
+calcurse
 clonezilla
 cups
 cups-filters
@@ -33,6 +30,7 @@ dconf-editor
 ddrescue
 dhclient
 dialog
+dmenu
 dmidecode
 dmraid
 dnsmasq
@@ -53,9 +51,10 @@ fzf
 garcon
 ghostscript
 git
-gnome-keyring
+geoip
 gnome-system-monitor
 gnu-netcat
+gpick
 grub
 gsfonts
 gsimplecal
@@ -73,6 +72,8 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 hdparm
+hexchat
+htop
 hwinfo
 hyperv
 imagemagick
@@ -84,8 +85,6 @@ irssi
 iw
 iwd
 jfsutils
-kvantum
-kvantum-theme-materia
 laptop-detect
 libdvdcss
 libfido2
@@ -95,6 +94,7 @@ libpwquality
 libusb-compat
 libva-intel-driver
 libva-mesa-driver
+light
 logrotate
 lsb-release
 lsd
@@ -119,6 +119,7 @@ mtpfs
 nano
 nano-syntax-highlighting
 nbd
+net-tools
 ncmpcpp
 ndisc6
 nfs-utils
@@ -140,6 +141,7 @@ pamixer
 partimage
 pavucontrol
 pcsclite
+pcmanfm
 picom
 pipewire-alsa
 pipewire-docs
@@ -152,7 +154,6 @@ pptpclient
 pv
 python-pipx
 python-pyparted
-qt5ct
 refind
 reflector
 reiserfsprogs
@@ -180,7 +181,6 @@ tcpdump
 terminus-font
 testdisk
 the_silver_searcher
-thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
@@ -188,6 +188,7 @@ tlp
 ttf-dejavu
 ttf-font-awesome
 ttf-hack
+ttf-jetbrains-mono-nerd
 ttf-mononoki-nerd
 ttf-roboto
 ttf-roboto-mono
@@ -228,7 +229,6 @@ xf86-video-ati
 xf86-video-intel
 xf86-video-nouveau
 xf86-video-vmware
-xfce4-taskmanager
 xorg-bdftopcf
 xorg-iceauth
 xorg-mkfontscale
@@ -308,11 +308,11 @@ echo  -e "$GREEN Clone trizen for install \n"  & sleep 1
 #Install from AUR
 echo -e "$GREEN Install from AUR"  & sleep 1
 pkaur=(
+pulseaudio-nextsink
+sublime-text-4
 brave-bin
 downgrade
-pulseaudio-nextsink
 reddio
-sublime-text-4
 )
 #AUR Loop through the package list and install if not already installed
 for package in "${pkaur[@]}"; do

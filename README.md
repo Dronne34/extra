@@ -1,8 +1,10 @@
 # extra
 # archlinux after base install
 # Personal config.
-# Terminal=alacritty,st
+# Terminal=alacritty, st
+# File Mamanger=pcmanfm, ranger
 # Wm=dwm-6.4
-# Shell=bash
+# Shell=bash, zsh
 # Browser=brave
-# Player=mpv,ffplay
+# Player=mpv, ffplay
+
