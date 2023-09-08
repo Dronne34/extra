@@ -296,14 +296,15 @@ for package in "${packages[@]}"; do
 done
 
 # Install trizen
-echo  -e "$GREEN Clone trizen for install \n"  & sleep 1
+ echo  -e "$GREEN Clone trizen for install \n"  & sleep 1
  echo  -e "$RED Remove older folder \n"  & sleep 1
+ cd /tmp
  rm -rf trizen
- git clone https://aur.archlinux.org/trizen.git
- cd trizen
+ git clone https://aur.archlinux.org/trizen.git 
+ cd /tmp/trizen
  makepkg -fsi --noconfirm
  cd
- echo  -e "$GREEN Trizen done"
+ echo  -e "$GREEN Trizen done" & sleep 1
 
 #Install from AUR
 echo -e "$GREEN Install from AUR"  & sleep 1
@@ -325,3 +326,6 @@ for package in "${pkaur[@]}"; do
 done
 
 echo -e "$GREEN Install from AUR done" & sleep 1
+ cd /tmp
+ rm -rf trizen
+ cd
