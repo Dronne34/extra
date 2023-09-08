@@ -289,7 +289,7 @@ TODAY=$(date)
 for package in "${packages[@]}"; do
     if ! pacman -Q "$package" &>/dev/null; then
         echo -e "Installing $package..."
-        sudo pacman -S --noconfirm "$package"
+        sudo pacman -S --noconfirm  --needed "$package"
     else
         echo -e "$package is already installed. Skipping."
     fi
