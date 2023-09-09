@@ -39,7 +39,7 @@ duf
 dunst
 efibootmgr
 ethtool
-exfatprogs
+exfat-utils
 expac
 f2fs-tools
 fatresize
