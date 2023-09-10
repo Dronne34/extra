@@ -67,7 +67,7 @@ git clone https://github.com/Dronne34/config ~/.config
 git clone https://github.com/Dronne34/.fonts
 git clone https://github.com/Dronne34/home ~/.home
 cd ~/.home
-cp -rf * ~/
+cp -arf . ~/
 cd
 rm -rf ~/.home
 
