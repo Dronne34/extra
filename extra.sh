@@ -160,6 +160,7 @@ reiserfsprogs
 ripgrep
 ristretto
 rofi
+ranger
 rp-pppoe
 rsync
 rxvt-unicode
@@ -268,10 +269,7 @@ zenity
 zsh
 zsh-completions
 zsh-syntax-highlighting
-
-
 )
-
 
 BLUE='\033[38;5;4m'
 RED='\033[0;31m'
