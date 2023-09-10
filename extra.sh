@@ -297,45 +297,4 @@ for package in "${packages[@]}"; do
     fi
 done
 
-# Install trizen
- echo  -e "$GREEN Clone trizen for install \n"  & sleep 1
- echo  -e "$RED Remove older folder \n"  & sleep 1
- cd /tmp
- rm -rf trizen
- git clone https://aur.archlinux.org/trizen.git 
- cd /tmp/trizen
- makepkg -fsi --noconfirm
- rm -rf /tmp/trizen
-
- cd
- echo  -e $GREEN"Trizen done" & sleep 1
-
-#Install from AUR
-echo -e $RED"Install from AUR"  & sleep 1
-pkaur=(
-pulseaudio-nextsink
-sublime-text-4
-brave-bin
-downgrade
-reddio
-)
-#AUR Loop through the package list and install if not already installed
-for package in "${pkaur[@]}"; do
-    if ! pacman -Qm "$package" &>/dev/null; then
-        echo -e "Installing $package..."
-        trizen -S --noconfirm "$package"
-    else
-        echo -e "$package --> From AUR is already installed. Skipping."
-    fi
-done
-
-echo -e $BLUE"Install from AUR done" & sleep 1
-
-echo -e $BLUE"Git Clone oh-my-zsh and tool" & sleep 1
-
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-echo -e $BLUE"Install oh-my-zsh setup done!" & sleep 1
+echo -e "List of packages to install done!" & sleep 1
