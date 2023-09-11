@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo  
 tput setaf 3
-echo "List of packages to install" & sleep 1
+echo "Installing packages from pklist!" & sleep 1
 tput sgr0
 echo
 #echo -e "\n"
@@ -19,6 +19,9 @@ GREEN='\033[0;32m'
 # tput setaf 6 = cyan
 # tput setaf 7 = gray
 # tput setaf 8 = light blue
+
+sudo pacman -S --needed - < pkglist.txt
+echo  -e $GREEN"Installing packages done! \n"  & sleep 1
 
 
 # Install trizen
@@ -66,9 +69,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/Dronne34/config ~/.config
 git clone https://github.com/Dronne34/.fonts
 git clone https://github.com/Dronne34/home ~/.home
-cd ~/.home
-cp -arf . ~/
-cd
-rm -rf ~/.home
-
+cp -arf ~/.home/. ~/ && rm -rf ~/.home
+sh papirus.sh
 echo -e $BLUE"Install oh-my-zsh setup done!" & sleep 1
