@@ -20,7 +20,7 @@ GREEN='\033[0;32m'
 # tput setaf 7 = gray
 # tput setaf 8 = light blue
 
-sudo pacman -S --needed - < pkglist.txt
+# sudo pacman -S --needed - < pkglist.txt
 echo  -e $GREEN"Installing packages done! \n"  & sleep 1
 
 
@@ -70,5 +70,5 @@ git clone https://github.com/Dronne34/config ~/.config
 git clone https://github.com/Dronne34/.fonts
 git clone https://github.com/Dronne34/home ~/.home
 cp -arf ~/.home/. ~/ && rm -rf ~/.home
-sh papirus.sh
+# sh papirus.sh
 echo -e $BLUE"Install oh-my-zsh setup done!" & sleep 1
