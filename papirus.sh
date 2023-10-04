@@ -25,7 +25,7 @@ cat <<- EOF
 EOF
 
 : "${DESTDIR:=${HOME}/.icons}"
-: "${ICON_THEMES:=Papirus ePapirus ePapirus-Dark Papirus-Dark Papirus-Light}"
+: "${ICON_THEMES:=Papirus Papirus-Dark}"
 : "${TAG:=master}"
 : "${uninstall:=false}"
 
