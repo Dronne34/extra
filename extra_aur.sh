@@ -82,7 +82,7 @@ echo "Script location: ${BASEDIR}"
 echo -e "Install cursor Bibata-Ice" & sleep 1
 wget https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.4/Bibata-Modern-Ice.tar.xz
 tar -xvf Bibata-Modern-Ice.tar.xz
-cp -rf  Bibata-* ~/.icons/
+cp -rf  Bibata-Modern-Ice ~/.icons/
 rm -rf Bibata-*
 
 echo -e "Install cursor Bibata-Ice done!" & sleep 1
