@@ -22,6 +22,7 @@ GREEN='\033[0;32m'
 
 sudo pacman -S --needed - < "${PWD%/}/pklist.txt"
 echo  -e $GREEN"Installing packages done! \n"  & sleep 1
+xdg-user-dirs-update --force
 
 
 # Install trizen
@@ -38,7 +39,7 @@ echo  -e $GREEN"Installing packages done! \n"  & sleep 1
 
  echo  -e $GREEN"Trizen done" & sleep 1
 
-Install from AUR
+#Install from AUR
 echo -e "Install from AUR"  & sleep 1
 pkaur=(
 pulseaudio-nextsink
@@ -72,7 +73,10 @@ git clone https://github.com/Dronne34/home ~/.home
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 echo -e "Install oh-my-zsh setup done!" & sleep 1
-cp -arf ~/.home/. ~/ && rm -rf ~/.home
+# cp -arf ~/.home/. ~/ && rm -rf ~/.home
+cp -rf ~/default ~/.icons 
+rm -rf ~/default
+
 cd $DIR
 echo "Script executed from: ${PWD}"
 BASEDIR=$(dirname $0)
