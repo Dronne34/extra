@@ -73,9 +73,10 @@ git clone https://github.com/Dronne34/font ~/.fonts
 git clone https://github.com/Dronne34/home ~/.home
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
-cp -arf ~/.home/. ~/ && rm -rf ~/.home
+cp -arf ~/.home/. ~/ 
 cp -rf ~/default/ ~/.icons 
 rm -rf ~/default
+rm -rf ~/.home
 
 echo -e "Install oh-my-zsh setup done!" & sleep 1
 
