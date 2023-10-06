@@ -63,20 +63,21 @@ echo -e "Install from AUR done" & sleep 1
 echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 
 rm -rf ~/.config
+git clone https://github.com/Dronne34/config ~/.config
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/Dronne34/config ~/.config
 git clone https://github.com/Dronne34/font ~/.fonts
 git clone https://github.com/Dronne34/home ~/.home
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-echo -e "Install oh-my-zsh setup done!" & sleep 1
+
 cp -arf ~/.home/. ~/ && rm -rf ~/.home
-cp -rf ~/default ~/.icons 
+cp -rf ~/default/ ~/.icons 
 rm -rf ~/default
+
+echo -e "Install oh-my-zsh setup done!" & sleep 1
 
 cd $DIR
 echo "Script executed from: ${PWD}"
@@ -84,10 +85,11 @@ BASEDIR=$(dirname $0)
 echo "Script location: ${BASEDIR}"
 ./papirus.sh
 
-echo -e "Install cursor Bibata-Ice" & sleep 1
+echo -e "Install cursor Bibata-Modern-Ice" & sleep 1
+
 wget -q --show-progress https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.4/Bibata-Modern-Ice.tar.xz
 tar -xvf Bibata-Modern-Ice.tar.xz
 cp -rf  Bibata-Modern-Ice ~/.icons/
 rm -rf Bibata-*
 
-echo -e "Install cursor Bibata-Ice done!" & sleep 1
+echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
