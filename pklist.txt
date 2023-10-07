@@ -209,6 +209,7 @@ usbmuxd
 usbutils
 variety
 vim
+vifm
 vpnc
 vulkan-intel
 vulkan-radeon
