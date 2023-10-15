@@ -144,8 +144,10 @@ pavucontrol
 pcsclite
 pcmanfm
 picom
+pipewire
 pipewire-alsa
 pipewire-docs
+pipewire-jack
 pipewire-pulse
 polkit-gnome
 poppler-glib
@@ -223,10 +225,12 @@ wmctrl
 wpa_supplicant
 wvdial
 xapp
+xbindkeys
 xclip
 xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
+xdotool
 xf86-input-elographics
 xf86-video-amdgpu
 xf86-video-ati
@@ -264,9 +268,12 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xdotool
 yad
 yt-dlp
 ytfzf
+zathura
+zathura-cb
+zathura-djvu
+zathura-pdf-poppler
 zenity
 zsh
