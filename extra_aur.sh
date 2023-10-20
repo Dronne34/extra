@@ -42,11 +42,11 @@ xdg-user-dirs-update --force
 #Install from AUR
 echo -e "Install from AUR"  & sleep 1
 pkaur=(
-pulseaudio-nextsink
+# pulseaudio-nextsink
 sublime-text-4
 brave-bin
-downgrade
-reddio
+# downgrade
+# reddio
 )
 #AUR Loop through the package list and install if not already installed
 for package in "${pkaur[@]}"; do
@@ -63,14 +63,14 @@ echo -e "Install from AUR done" & sleep 1
 echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 
 rm -rf ~/.config
-git clone https://github.com/Dronne34/config ~/.config
-git clone https://github.com/Dronne34/font ~/.fonts
-git clone https://github.com/Dronne34/home ~/.home
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/Dronne34/config ~/.config
+git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
+git clone --depth=1 https://github.com/Dronne34/home ~/.home
+# git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+# git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone --depth=1 https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+# git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 cp -arf ~/.home/. ~/ 
