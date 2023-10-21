@@ -79,6 +79,7 @@ iniparser
 intel-media-driver
 intel-ucode
 inxi
+iptables-nft
 irssi
 iw
 iwd
@@ -95,6 +96,7 @@ libva-intel-driver
 libva-mesa-driver
 libvirt
 light
+linux-firmware
 logrotate
 lsb-release
 lsd
@@ -276,4 +278,5 @@ zathura-cb
 zathura-djvu
 zathura-pdf-poppler
 zenity
+zram-generator
 zsh

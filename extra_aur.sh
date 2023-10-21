@@ -20,7 +20,7 @@ GREEN='\033[0;32m'
 # tput setaf 7 = gray
 # tput setaf 8 = light blue
 
-sudo pacman -S --needed - < "${PWD%/}/pklist.txt"
+sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
 echo  -e $GREEN"Installing packages done! \n"  & sleep 1
 xdg-user-dirs-update --force
 
@@ -42,7 +42,7 @@ xdg-user-dirs-update --force
 #Install from AUR
 echo -e "Install from AUR"  & sleep 1
 pkaur=(
-# pulseaudio-nextsink
+pulseaudio-nextsink
 sublime-text-4
 brave-bin
 # downgrade
@@ -83,7 +83,7 @@ echo -e "Install oh-my-zsh setup done!" & sleep 1
 cd $DIR
 echo "Script executed from: ${PWD}"
 BASEDIR=$(dirname $0)
-echo "Script location: ${BASEDIR}"
+echo "Script location: ${BASEDIR}" & sleep 1
 ./papirus.sh
 
 echo -e "Install cursor Bibata-Modern-Ice" & sleep 1
