@@ -71,6 +71,7 @@ gvfs-nfs
 gvfs-smb
 hdparm
 hexchat
+highlight
 htop
 hwinfo
 hyperv
@@ -97,6 +98,7 @@ libva-mesa-driver
 libvirt
 light
 linux-firmware
+linux-lts
 logrotate
 lsb-release
 lsd
@@ -214,6 +216,9 @@ usbutils
 variety
 vim
 vifm
+vim
+virt-manager
+virt-viewer
 vpnc
 vulkan-intel
 vulkan-radeon

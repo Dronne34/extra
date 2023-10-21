@@ -67,6 +67,7 @@ git clone --depth=1 https://github.com/Dronne34/config ~/.config
 git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
 git clone --depth=1 https://github.com/Dronne34/home ~/.home
 git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
+
 # git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 # git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # git clone --depth=1 https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
@@ -85,6 +86,16 @@ echo "Script executed from: ${PWD}"
 BASEDIR=$(dirname $0)
 echo "Script location: ${BASEDIR}" & sleep 1
 ./papirus.sh
+
+echo -e "Install numix-icons" & sleep 1
+
+wget -q --show-progress https://raw.githubusercontent.com/Dronne34/numix-icons/main/Numix.tar.gz
+tar -xf  Numix.tar.gz
+cp  -rf  Numix ~/.icons/
+rm  -rf  Numix*
+
+echo -e "Install numix-icons done!" & sleep 1
+
 
 echo -e "Install cursor Bibata-Modern-Ice" & sleep 1
 
