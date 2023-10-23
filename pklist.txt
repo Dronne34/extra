@@ -6,8 +6,6 @@ alsa-utils
 arc-gtk-theme
 arch-install-scripts
 baobab
-base
-base-devel
 bash-completion
 bat
 bind
@@ -19,6 +17,7 @@ broadcom-wl-dkms
 btrfs-progs
 calcurse
 clonezilla
+conky
 cups
 cups-filters
 cups-pdf
@@ -242,11 +241,20 @@ xf86-video-amdgpu
 xf86-video-ati
 xf86-video-intel
 xf86-video-nouveau
+xf86-video-vesa
 xf86-video-vmware
 xorg-bdftopcf
+xorg-docs
+xorg-fonts-100dpi
+xorg-fonts-75dpi
+xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
+xorg-server-devel
+xorg-server-xephyr
+xorg-server-xnest
+xorg-server-xvfb
 xorg-sessreg
 xorg-smproxy
 xorg-x11perf
