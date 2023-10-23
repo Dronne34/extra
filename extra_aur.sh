@@ -105,3 +105,5 @@ cp  -rf  Bibata-Modern-Ice ~/.icons/
 rm  -rf  Bibata-*
 
 echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
+
+sudo cp -rf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
