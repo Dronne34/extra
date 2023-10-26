@@ -42,7 +42,7 @@ xdg-user-dirs-update --force
 #Install from AUR
 echo -e "Install from AUR"  & sleep 1
 pkaur=(
-pulseaudio-nextsink
+#pulseaudio-nextsink
 sublime-text-4
 brave-bin
 # downgrade
@@ -107,3 +107,4 @@ rm  -rf  Bibata-*
 echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 sudo cp -rf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
+sudo cp -rf bluetooth-disable-before-sleep.service /etc/systemd/system/

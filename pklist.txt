@@ -48,7 +48,6 @@ geoip
 ghostscript
 git
 github-cli
-gnome-system-monitor
 gnu-netcat
 gpick
 grub
