@@ -6,6 +6,10 @@ tput sgr0
 echo
 #echo -e "\n"
 DIR=~/Github/extra
+DIR_DMENU=~/Github/extra/dmenu
+DIR_DWM=~/Github/extra/dwm-6.4
+DIR_ST=~/Github/extra/st-0.9
+
 BLUE='\033[38;5;4m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -24,30 +28,28 @@ sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
 echo  -e $GREEN"Installing packages done! \n"  & sleep 1
 xdg-user-dirs-update --force
 
-
 # Install trizen
- echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
-
- echo  -e $RED"Remove older folder! \n"  & sleep 1
- cd /tmp
- rm -rf trizen
- git clone https://aur.archlinux.org/trizen.git 
- cd /tmp/trizen
- makepkg -fsi --noconfirm
- rm -rf /tmp/trizen
- cd
-
- echo  -e $GREEN"Trizen done" & sleep 1
+echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
+echo  -e $RED"Remove older folder! \n"  & sleep 1
+cd /tmp
+rm -rf trizen
+git clone https://aur.archlinux.org/trizen.git 
+cd /tmp/trizen
+makepkg -fsi --noconfirm
+rm -rf /tmp/trizen
+cd
+echo  -e $GREEN"Trizen done" & sleep 1
 
 #Install from AUR
 echo -e "Install from AUR"  & sleep 1
 pkaur=(
-#pulseaudio-nextsink
+pulseaudio-nextsink
 sublime-text-4
 brave-bin
 # downgrade
 # reddio
 )
+
 #AUR Loop through the package list and install if not already installed
 for package in "${pkaur[@]}"; do
     if ! pacman -Qm "$package" &>/dev/null; then
@@ -78,7 +80,6 @@ cp -arf ~/.home/. ~/
 rm -rf ~/.home
 # cp -rf ~/default/ ~/.icons 
 # rm -rf ~/default
-
 echo -e "Install oh-my-zsh setup done!" & sleep 1
 
 cd $DIR
@@ -86,16 +87,13 @@ echo "Script executed from: ${PWD}"
 BASEDIR=$(dirname $0)
 echo "Script location: ${BASEDIR}" & sleep 1
 ./papirus.sh
-
 echo -e "Install numix-icons" & sleep 1
 
 wget -q --show-progress https://raw.githubusercontent.com/Dronne34/numix-icons/main/Numix.tar.gz
 tar -xf  Numix.tar.gz
 cp  -rf  Numix ~/.icons/
 rm  -rf  Numix*
-
 echo -e "Install numix-icons done!" & sleep 1
-
 
 echo -e "Install cursor Bibata-Modern-Ice" & sleep 1
 
@@ -106,5 +104,31 @@ rm  -rf  Bibata-*
 
 echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
 
+
+cd $DIR
+#### clone and install dwm-6.4
+git clone --depth=1 https://github.com/Dronne34/dwm-6.4
+cd $DIR_DWM 
+sudo make install
+echo -e "Install dwm-6.4 done!" & sleep 1
+
+cd $DIR
+### clone and install dmenu
+git clone --depth=1 https://github.com/Dronne34/dmenu
+cd $DIR_DMENU 
+sudo make install
+echo -e "Install dmenu done!" & sleep 1
+
+cd $DIR
+### clone and install st-0.9
+git clone --depth=1 https://github.com/Dronne34/st-0.9
+cd $DIR_ST  
+sudo make install
+echo -e "Install st-0.9 done!" & sleep 1
+
+cd $DIR
+### root
+rm -rf st-0.9/ dmenu/ dwm-6.4/
 sudo cp -rf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
 sudo cp -rf bluetooth-disable-before-sleep.service /etc/systemd/system/
+sudo cp -rf 20-intel.conf /etc/X11/xorg.conf.d/
