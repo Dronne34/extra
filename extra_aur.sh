@@ -132,3 +132,8 @@ rm -rf st-0.9/ dmenu/ dwm-6.4/
 sudo cp -rf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
 sudo cp -rf bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf 20-intel.conf /etc/X11/xorg.conf.d/
+# sudo systemctl enable libvirtd
+# sudo usermod -G libvirt -a $USER
+# sudo virsh net-autostart default
+# sudo virsh net-start default
+# virsh list --all
