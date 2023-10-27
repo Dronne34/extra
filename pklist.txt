@@ -149,7 +149,6 @@ pipewire
 pipewire-alsa
 pipewire-docs
 pipewire-jack
-pipewire-pulse
 polkit-gnome
 poppler-glib
 poppler-qt5
