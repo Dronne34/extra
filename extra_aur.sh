@@ -29,7 +29,7 @@ echo  -e $GREEN"Installing packages done! \n"  & sleep 1
 xdg-user-dirs-update --force
 sudo pacman-key --init
 sudo pacman-key --populate
-sudo reflector --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+ sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 # Install trizen
 echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
@@ -135,6 +135,8 @@ rm -rf st-0.9/ dmenu/ dwm-6.4/
 sudo cp -rf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
 sudo cp -rf bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf 20-intel.conf /etc/X11/xorg.conf.d/
+sudo cp -rf pacman.conf /etc/
+### System service
 sudo systemctl enable bluetooth-disable-before-sleep.service
 sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
