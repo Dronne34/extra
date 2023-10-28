@@ -162,8 +162,6 @@ refind
 reflector
 reiserfsprogs
 ripgrep
-ristretto
-rofi
 ranger
 rp-pppoe
 rsync
@@ -186,9 +184,6 @@ tcpdump
 terminus-font
 testdisk
 the_silver_searcher
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
 tlp
 ttf-dejavu
 ttf-font-awesome
@@ -214,7 +209,6 @@ vim
 vifm
 vim
 virt-manager
-virt-viewer
 vpnc
 vulkan-intel
 vulkan-radeon
@@ -227,6 +221,7 @@ wireplumber
 wmctrl
 wpa_supplicant
 wvdial
+xarchiver
 xapp
 xbindkeys
 xclip
@@ -234,23 +229,15 @@ xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
 xdotool
-xf86-input-elographics
-xf86-video-amdgpu
-xf86-video-ati
 xf86-video-intel
 xf86-video-nouveau
 xf86-video-vesa
-xf86-video-vmware
-xorg-bdftopcf
 xorg-docs
-xorg-fonts-100dpi
-xorg-fonts-75dpi
 xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
 xorg-server
 xorg-server-devel
-xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
 xorg-sessreg
@@ -277,10 +264,8 @@ xorg-xrandr
 xorg-xrefresh
 xorg-xsetroot
 xorg-xvinfo
-xorg-xwd
 xorg-xwininfo
 xorg-xwud
-yad
 yt-dlp
 ytfzf
 zathura
@@ -288,5 +273,4 @@ zathura-cb
 zathura-djvu
 zathura-pdf-poppler
 zenity
-zram-generator
 zsh
