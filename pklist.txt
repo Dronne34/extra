@@ -73,6 +73,7 @@ highlight
 htop
 hwinfo
 hyperv
+i3lock
 imagemagick
 iniparser
 intel-media-driver
@@ -120,7 +121,6 @@ mtpfs
 nano
 nano-syntax-highlighting
 nbd
-net-tools
 ncmpcpp
 ndisc6
 net-tools
@@ -142,13 +142,14 @@ p7zip
 pamixer
 partimage
 pavucontrol
-pcsclite
 pcmanfm
+pcsclite
 picom
 pipewire
 pipewire-alsa
 pipewire-docs
 pipewire-jack
+pipewire-pulse
 polkit-gnome
 poppler-glib
 poppler-qt5
@@ -158,11 +159,11 @@ pv
 python-pipx
 python-pyparted
 qbittorrent
+ranger
 refind
 reflector
 reiserfsprogs
 ripgrep
-ranger
 rp-pppoe
 rsync
 rxvt-unicode
@@ -185,6 +186,7 @@ terminus-font
 testdisk
 the_silver_searcher
 tlp
+transmission-cli
 ttf-dejavu
 ttf-font-awesome
 ttf-hack
@@ -205,7 +207,6 @@ usb_modeswitch
 usbmuxd
 usbutils
 variety
-vim
 vifm
 vim
 virt-manager
@@ -221,8 +222,8 @@ wireplumber
 wmctrl
 wpa_supplicant
 wvdial
-xarchiver
 xapp
+xarchiver
 xbindkeys
 xclip
 xdg-desktop-portal-gtk
@@ -232,6 +233,7 @@ xdotool
 xf86-video-intel
 xf86-video-nouveau
 xf86-video-vesa
+xfsprogs
 xorg-docs
 xorg-font-util
 xorg-iceauth

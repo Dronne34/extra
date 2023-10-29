@@ -110,7 +110,7 @@ echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 cd $DIR
 #### clone and install dwm-6.4
-git clone --depth=1 https://github.com/Dronne34/dwm-6.4
+git clone --depth=1 https://github.com/Dronne34/dwm-6.4.1
 cd $DIR_DWM 
 sudo make install
 echo -e "Install dwm-6.4 done!" & sleep 1
