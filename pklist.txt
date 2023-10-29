@@ -142,7 +142,6 @@ p7zip
 pamixer
 partimage
 pavucontrol
-pcmanfm
 pcsclite
 picom
 pipewire
@@ -185,6 +184,8 @@ tcpdump
 terminus-font
 testdisk
 the_silver_searcher
+thunar
+thunar-volman
 tlp
 transmission-cli
 ttf-dejavu
