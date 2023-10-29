@@ -7,7 +7,7 @@ echo
 #echo -e "\n"
 DIR=~/Github/extra
 DIR_DMENU=~/Github/extra/dmenu
-DIR_DWM=~/Github/extra/dwm-6.4
+DIR_DWM=~/Github/extra/dwm-6.4.1
 DIR_ST=~/Github/extra/st-0.9
 
 BLUE='\033[38;5;4m'
@@ -27,9 +27,9 @@ GREEN='\033[0;32m'
 sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
 echo  -e $GREEN"Installing packages done! \n"  & sleep 1
 xdg-user-dirs-update --force
-sudo pacman-key --init
-sudo pacman-key --populate
- sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+# sudo pacman-key --init
+# sudo pacman-key --populate
+# sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 # Install trizen
 echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
