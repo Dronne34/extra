@@ -131,7 +131,7 @@ echo -e "Install st-0.9 done!" & sleep 1
 
 cd $DIR
 ### root
-rm -rf st-0.9/ dmenu/ dwm-6.4/
+rm -rf st-0.9/ dmenu/ dwm-6.4.1/
 sudo cp -rf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
 sudo cp -rf bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf 20-intel.conf /etc/X11/xorg.conf.d/
