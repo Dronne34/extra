@@ -67,7 +67,7 @@ done
 echo -e $WHITE"Install from AUR done" & sleep 1
 
 echo -e $GREEN"Install User config" & sleep 1
-# rm -rf ~/.config
+rm -rf ~/.config
 cd $DIR
 wget -q --show-progress https://github.com/Dronne34/home/archive/refs/heads/main.zip -O home.zip
 wget -q --show-progress https://github.com/Dronne34/config/archive/refs/heads/main.zip -O config.zip
