@@ -10,36 +10,37 @@ DIR_DMENU=~/Github/extra/dmenu
 DIR_DWM=~/Github/extra/dwm-6.4.1
 DIR_ST=~/Github/extra/st-0.9
 
-BLUE='\033[38;5;4m'
-RED='\033[0;31m'
-GREEN='\033[0;32m'
+WHITE='\e[97m'
+GREEN='\e[92m'
+BLUE='\e[34m'
+RED='\e[91m'
 # TODAY=$(date)
 # tput setaf 0 = black
 # tput setaf 1 = red
 # tput setaf 2 = green
 # tput setaf 3 = yellow
-# tput setaf 4 = dark blue
+# tput setaf 4 = darkblue
 # tput setaf 5 = purple
 # tput setaf 6 = cyan
 # tput setaf 7 = gray
-# tput setaf 8 = light blue
+# tput setaf 8 = lightblue
 
-sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
-echo  -e $GREEN"Installing packages done! \n"  & sleep 1
-xdg-user-dirs-update --force
-# sudo pacman-key --init
-# sudo pacman-key --populate
-# sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+# sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
+# echo  -e $GREEN"Installing packages done! \n"  & sleep 1
+# xdg-user-dirs-update --force
+# # sudo pacman-key --init
+# # sudo pacman-key --populate
+# # sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
-# Install trizen
-echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
-echo  -e $RED"Remove older folder! \n"  & sleep 1
-cd /tmp
-rm -rf trizen
-git clone https://aur.archlinux.org/trizen.git 
-cd /tmp/trizen
-makepkg -fsi --noconfirm
-rm -rf /tmp/trizen
+# # Install trizen
+# echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
+# echo  -e $RED"Remove older folder! \n"  & sleep 1
+# cd /tmp
+# rm -rf trizen
+# git clone https://aur.archlinux.org/trizen.git 
+# cd /tmp/trizen
+# makepkg -fsi --noconfirm
+# rm -rf /tmp/trizen
 cd
 echo  -e $GREEN"Trizen done" & sleep 1
 
@@ -63,40 +64,56 @@ for package in "${pkaur[@]}"; do
     fi
 done
 
-echo -e "Install from AUR done" & sleep 1
+echo -e $WHITE"Install from AUR done" & sleep 1
 
-echo -e "Git Clone oh-my-zsh and tool" & sleep 1
+echo -e $GREEN"Install User config" & sleep 1
+# rm -rf ~/.config
+cd $DIR
+wget -q --show-progress https://github.com/Dronne34/home/archive/refs/heads/main.zip -O home.zip
+wget -q --show-progress https://github.com/Dronne34/config/archive/refs/heads/main.zip -O config.zip
+wget -q --show-progress https://github.com/Dronne34/font/archive/refs/heads/main.zip -O font.zip
+wget -q --show-progress https://github.com/junegunn/fzf/archive/refs/heads/master.zip -O fzf.zip
+wget -q --show-progress https://raw.githubusercontent.com/Dronne34/papirus-dark/main/Papirus-Dark.zip
+unzip -oq "*.zip"
+cp -R config-main/* ~/.config
+cp -R Papirus-Dark/ ~/.icons
+cp -R font-main/ ~/.fonts
+cp -R fzf-master/ ~/.fzf
+cp -R home-main/. ~/
+rm -rf *.zip config-main/ font-main/ fzf-master/ home-main/ Papirus-Dark/
 
-rm -rf ~/.config
-git clone --depth=1 https://github.com/Dronne34/config ~/.config
-git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
-git clone --depth=1 https://github.com/Dronne34/home ~/.home
-git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
+echo -e $GREEN"Install User config done!" & sleep 1
 
+# git clone --depth=1 https://github.com/Dronne34/config ~/.config
+# git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
+# git clone --depth=1 https://github.com/Dronne34/home ~/.home
+# git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
+
+echo -e $WHITE"Git Clone oh-my-zsh and tool" & sleep 1
 # git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 # git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # git clone --depth=1 https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
 # git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-cp -arf ~/.home/. ~/ 
-rm -rf ~/.home
-# cp -rf ~/default/ ~/.icons 
-# rm -rf ~/default
+# cp -arf ~/.home/. ~/ 
+# rm -rf ~/.home
+# # cp -rf ~/default/ ~/.icons 
+# # rm -rf ~/default
 echo -e "Install oh-my-zsh setup done!" & sleep 1
 
-cd $DIR
-echo "Script executed from: ${PWD}"
-BASEDIR=$(dirname $0)
-echo "Script location: ${BASEDIR}" & sleep 1
-./papirus.sh
-echo -e "Install numix-icons" & sleep 1
+# cd $DIR
+# echo "Script executed from: ${PWD}"
+# BASEDIR=$(dirname $0)
+# echo "Script location: ${BASEDIR}" & sleep 1
+# ./papirus.sh
+echo -e $GREEN"Install numix-icons" & sleep 1
 
 wget -q --show-progress https://raw.githubusercontent.com/Dronne34/numix-icons/main/Numix.tar.gz
 tar -xf  Numix.tar.gz
 cp  -rf  Numix ~/.icons/
 rm  -rf  Numix*
-echo -e "Install numix-icons done!" & sleep 1
+echo -e $GREEN"Install numix-icons done!" & sleep 1
 
 echo -e "Install cursor Bibata-Modern-Ice" & sleep 1
 
@@ -105,7 +122,7 @@ tar -xf  Bibata-Modern-Ice.tar.xz
 cp  -rf  Bibata-Modern-Ice ~/.icons/
 rm  -rf  Bibata-*
 
-echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
+echo -e $WHITE"Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 
 cd $DIR
@@ -113,7 +130,7 @@ cd $DIR
 git clone --depth=1 https://github.com/Dronne34/dwm-6.4.1
 cd $DIR_DWM 
 sudo make install
-echo -e "Install dwm-6.4 done!" & sleep 1
+echo -e $GREEN"Install dwm-6.4 done!" & sleep 1
 
 cd $DIR
 ### clone and install dmenu
@@ -142,6 +159,7 @@ sudo systemctl enable bluetooth
 sudo systemctl start bluetooth
 
 # sudo systemctl enable libvirtd
+# sudo systemctl start libvirtd
 # sudo usermod -G libvirt -a $USER
 # sudo virsh net-autostart default
 # sudo virsh net-start default
