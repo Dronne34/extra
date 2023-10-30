@@ -25,22 +25,22 @@ RED='\e[91m'
 # tput setaf 7 = gray
 # tput setaf 8 = lightblue
 
-# sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
-# echo  -e $GREEN"Installing packages done! \n"  & sleep 1
-# xdg-user-dirs-update --force
-# # sudo pacman-key --init
-# # sudo pacman-key --populate
-# # sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
+echo  -e $GREEN"Installing packages done! \n"  & sleep 1
+xdg-user-dirs-update --force
+# sudo pacman-key --init
+# sudo pacman-key --populate
+# sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
-# # Install trizen
-# echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
-# echo  -e $RED"Remove older folder! \n"  & sleep 1
-# cd /tmp
-# rm -rf trizen
-# git clone https://aur.archlinux.org/trizen.git 
-# cd /tmp/trizen
-# makepkg -fsi --noconfirm
-# rm -rf /tmp/trizen
+# Install trizen
+echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
+echo  -e $RED"Remove older folder! \n"  & sleep 1
+cd /tmp
+rm -rf trizen
+git clone https://aur.archlinux.org/trizen.git 
+cd /tmp/trizen
+makepkg -fsi --noconfirm
+rm -rf /tmp/trizen
 cd
 echo  -e $GREEN"Trizen done" & sleep 1
 
@@ -73,14 +73,12 @@ wget -q --show-progress https://github.com/Dronne34/home/archive/refs/heads/main
 wget -q --show-progress https://github.com/Dronne34/config/archive/refs/heads/main.zip -O config.zip
 wget -q --show-progress https://github.com/Dronne34/font/archive/refs/heads/main.zip -O font.zip
 wget -q --show-progress https://github.com/junegunn/fzf/archive/refs/heads/master.zip -O fzf.zip
-wget -q --show-progress https://raw.githubusercontent.com/Dronne34/papirus-dark/main/Papirus-Dark.zip
 unzip -oq "*.zip"
 cp -R config-main/* ~/.config
-cp -R Papirus-Dark/ ~/.icons
 cp -R font-main/ ~/.fonts
 cp -R fzf-master/ ~/.fzf
 cp -R home-main/. ~/
-rm -rf *.zip config-main/ font-main/ fzf-master/ home-main/ Papirus-Dark/
+rm -rf *.zip config-main/ font-main/ fzf-master/ home-main/
 
 echo -e $GREEN"Install User config done!" & sleep 1
 
@@ -102,11 +100,11 @@ echo -e $WHITE"Git Clone oh-my-zsh and tool" & sleep 1
 # # rm -rf ~/default
 echo -e "Install oh-my-zsh setup done!" & sleep 1
 
-# cd $DIR
-# echo "Script executed from: ${PWD}"
-# BASEDIR=$(dirname $0)
-# echo "Script location: ${BASEDIR}" & sleep 1
-# ./papirus.sh
+cd $DIR
+echo "Script executed from: ${PWD}"
+BASEDIR=$(dirname $0)
+echo "Script location: ${BASEDIR}" & sleep 1
+./papirus.sh
 echo -e $GREEN"Install numix-icons" & sleep 1
 
 wget -q --show-progress https://raw.githubusercontent.com/Dronne34/numix-icons/main/Numix.tar.gz
@@ -125,34 +123,35 @@ rm  -rf  Bibata-*
 echo -e $WHITE"Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 
-cd $DIR
-#### clone and install dwm-6.4
-git clone --depth=1 https://github.com/Dronne34/dwm-6.4.1
-cd $DIR_DWM 
-sudo make install
-echo -e $GREEN"Install dwm-6.4 done!" & sleep 1
+# cd $DIR
+# #### clone and install dwm-6.4
+# git clone --depth=1 https://github.com/Dronne34/dwm-6.4.1
+# cd $DIR_DWM 
+# sudo make install
+# echo -e $GREEN"Install dwm-6.4 done!" & sleep 1
 
-cd $DIR
-### clone and install dmenu
-git clone --depth=1 https://github.com/Dronne34/dmenu
-cd $DIR_DMENU 
-sudo make install
-echo -e "Install dmenu done!" & sleep 1
+# cd $DIR
+# ### clone and install dmenu
+# git clone --depth=1 https://github.com/Dronne34/dmenu
+# cd $DIR_DMENU 
+# sudo make install
+# echo -e "Install dmenu done!" & sleep 1
 
-cd $DIR
-### clone and install st-0.9
-git clone --depth=1 https://github.com/Dronne34/st-0.9
-cd $DIR_ST  
-sudo make install
-echo -e "Install st-0.9 done!" & sleep 1
+# cd $DIR
+# ### clone and install st-0.9
+# git clone --depth=1 https://github.com/Dronne34/st-0.9
+# cd $DIR_ST  
+# sudo make install
+# echo -e "Install st-0.9 done!" & sleep 1
 
 cd $DIR
 ### root
-rm -rf st-0.9/ dmenu/ dwm-6.4.1/
+# rm -rf st-0.9/ dmenu/ dwm-6.4.1/
 sudo cp -rf 30-touchpad.conf /usr/share/X11/xorg.conf.d/
 sudo cp -rf bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf 20-intel.conf /etc/X11/xorg.conf.d/
 sudo cp -rf pacman.conf /etc/
+sudo cp -rf bin /usr/local/
 ### System service
 sudo systemctl enable bluetooth-disable-before-sleep.service
 sudo systemctl enable bluetooth
