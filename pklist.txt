@@ -11,8 +11,8 @@ bat
 bind
 bleachbit
 bluez
-bluez-libs
 bluez-utils
+bridge-utils
 broadcom-wl-dkms
 btrfs-progs
 calcurse
@@ -34,7 +34,6 @@ duf
 dunst
 efibootmgr
 ethtool
-exfat-utils
 expac
 f2fs-tools
 fatresize
@@ -87,6 +86,7 @@ laptop-detect
 libdvdcss
 libfido2
 libgsf
+libguestfs
 libopenraw
 libpulse
 libpwquality
@@ -212,6 +212,7 @@ variety
 vifm
 vim
 virt-manager
+virt-viewer
 vpnc
 vulkan-intel
 vulkan-radeon
