@@ -157,7 +157,6 @@ pptpclient
 pv
 python-pipx
 python-pyparted
-qbittorrent
 ranger
 refind
 reflector
