@@ -49,6 +49,7 @@ pkaur=(
 pulseaudio-nextsink
 sublime-text-4
 brave-bin
+trizen
 # downgrade
 # reddio
 )
