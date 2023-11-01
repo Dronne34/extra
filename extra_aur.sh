@@ -69,7 +69,7 @@ echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 
 rm -rf ~/.config
 rm -rf ~/.fonts
-rm-rf ~/.fzf
+rm -rf ~/.fzf
 git clone --depth=1 https://github.com/Dronne34/config ~/.config
 git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
 git clone --depth=1 https://github.com/Dronne34/home ~/.home
