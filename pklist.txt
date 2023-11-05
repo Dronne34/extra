@@ -47,6 +47,7 @@ geoip
 ghostscript
 git
 github-cli
+gnome-system-monitor
 gnu-netcat
 gpick
 grub
@@ -78,6 +79,7 @@ iniparser
 intel-media-driver
 intel-ucode
 inxi
+iptables-nft
 irssi
 iw
 iwd
@@ -95,6 +97,7 @@ libva-intel-driver
 libva-mesa-driver
 libvirt
 light
+links
 linux-firmware
 linux-lts
 logrotate
@@ -113,6 +116,7 @@ mkinitcpio-nfs-utils
 mlocate
 mobile-broadband-provider-info
 modemmanager
+mousepad
 mpc
 mpd
 mpv
@@ -231,6 +235,7 @@ xclip
 xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-utils
+xdo
 xdotool
 xf86-video-intel
 xf86-video-nouveau
@@ -270,6 +275,7 @@ xorg-xsetroot
 xorg-xvinfo
 xorg-xwininfo
 xorg-xwud
+xterm
 yt-dlp
 ytfzf
 zathura
