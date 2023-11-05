@@ -79,7 +79,6 @@ iniparser
 intel-media-driver
 intel-ucode
 inxi
-iptables-nft
 irssi
 iw
 iwd
