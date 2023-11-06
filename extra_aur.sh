@@ -136,16 +136,16 @@ cd $DIR
 ### root
 rm -rf st-0.9/ dmenu/ dwm-6.4/
 sudo cp -rf $DIR/bin/30-touchpad.conf /usr/share/X11/xorg.conf.d/
-sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
+#sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/20-intel.conf /etc/X11/xorg.conf.d/
 sudo cp -rf $DIR/bin/pacman.conf /etc/
 sudo cp -rf $DIR/bin/backlight.rules /etc/udev/rules.d/
 sudo cp -rf $DIR/bin/oblivion.xml /usr/share/gtksourceview-4/styles/
 
 ### System service
-sudo systemctl enable bluetooth-disable-before-sleep.service
-sudo systemctl enable bluetooth
-sudo systemctl start bluetooth
+#sudo systemctl enable bluetooth-disable-before-sleep.service
+#sudo systemctl enable bluetooth
+#sudo systemctl start bluetooth
 
 # sudo systemctl enable libvirtd
 # sudo usermod -G libvirt -a $USER

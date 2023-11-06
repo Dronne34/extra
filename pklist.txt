@@ -5,6 +5,7 @@ alsa-plugins
 alsa-utils
 arc-gtk-theme
 arch-install-scripts
+arc-icon-theme
 baobab
 bash-completion
 bat
@@ -122,7 +123,6 @@ mpv
 mtools
 mtpfs
 nano
-nano-syntax-highlighting
 nbd
 ncmpcpp
 ndisc6
@@ -196,9 +196,6 @@ ttf-font-awesome
 ttf-hack
 ttf-jetbrains-mono-nerd
 ttf-mononoki-nerd
-ttf-roboto
-ttf-roboto-mono
-ttf-ubuntu-font-family
 tumbler
 udftools
 udiskie
@@ -210,11 +207,6 @@ urxvt-perls
 usb_modeswitch
 usbmuxd
 usbutils
-variety
-vifm
-vim
-virt-manager
-virt-viewer
 vpnc
 vulkan-intel
 vulkan-radeon
@@ -228,7 +220,6 @@ wmctrl
 wpa_supplicant
 wvdial
 xapp
-xarchiver
 xbindkeys
 xclip
 xdg-desktop-portal-gtk
