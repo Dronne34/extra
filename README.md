@@ -2,7 +2,7 @@ extra
 archlinux after base install
 Personal config.
 Terminal=alacritty, st
-File Mamanger=pcmanfm, ranger
+File Mamanger=thunar, ranger
 Wm=dwm-6.4
 Shell=bash, zsh
 Browser=brave
