@@ -7,7 +7,7 @@ echo
 #echo -e "\n"
 DIR=~/Github/extra
 DIR_DMENU=~/Github/extra/dmenu
-DIR_DWM=~/Github/extra/dwm-6.4
+DIR_DWM=~/Github/extra/dwm-6.4.1
 DIR_ST=~/Github/extra/st-0.9
 
 BLUE='\033[38;5;4m'
@@ -49,7 +49,6 @@ pkaur=(
 pulseaudio-nextsink
 sublime-text-4
 brave-bin
-trizen
 # downgrade
 # reddio
 )
@@ -69,8 +68,8 @@ echo -e "Install from AUR done" & sleep 1
 echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 
 rm -rf ~/.config
-rm -rf ~/.fonts
-rm -rf ~/.fzf
+# rm -rf ~/.fonts
+# rm -rf ~/.fzf
 git clone --depth=1 https://github.com/Dronne34/config ~/.config
 git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
 git clone --depth=1 https://github.com/Dronne34/home ~/.home
@@ -92,7 +91,7 @@ cd $DIR
 echo "Script executed from: ${PWD}"
 BASEDIR=$(dirname $0)
 echo "Script location: ${BASEDIR}" & sleep 1
-./papirus.sh
+
 echo -e "Install numix-icons" & sleep 1
 
 wget -q --show-progress https://raw.githubusercontent.com/Dronne34/numix-icons/main/Numix.tar.gz
@@ -113,10 +112,10 @@ echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 cd $DIR
 #### clone and install dwm-6.4
-git clone --depth=1 https://github.com/Dronne34/dwm-6.4
+git clone --depth=1 https://github.com/Dronne34/dwm-6.4.1
 cd $DIR_DWM 
 sudo make install
-echo -e "Install dwm-6.4 done!" & sleep 1
+echo -e "Install dwm-6.4.1 done!" & sleep 1
 
 cd $DIR
 ### clone and install dmenu
@@ -134,7 +133,7 @@ echo -e "Install st-0.9 done!" & sleep 1
 
 cd $DIR
 ### root
-rm -rf st-0.9/ dmenu/ dwm-6.4/
+rm -rf st-0.9/ dmenu/ dwm-6.4.1/
 sudo cp -rf $DIR/bin/30-touchpad.conf /usr/share/X11/xorg.conf.d/
 #sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/20-intel.conf /etc/X11/xorg.conf.d/
