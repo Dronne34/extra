@@ -48,6 +48,7 @@ echo -e "Install from AUR"  & sleep 1
 pkaur=(
 pulseaudio-nextsink
 sublime-text-4
+task-spooler
 brave-bin
 # downgrade
 # reddio
