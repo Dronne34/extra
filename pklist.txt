@@ -127,6 +127,7 @@ nbd
 ncmpcpp
 ndisc6
 net-tools
+newsboat
 nfs-utils
 nilfs-utils
 nitrogen
@@ -157,6 +158,7 @@ poppler-glib
 poppler-qt5
 ppp
 pptpclient
+pulsemixer
 pv
 python-pipx
 python-pyparted
