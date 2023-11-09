@@ -152,3 +152,7 @@ sudo cp -rf $DIR/bin/oblivion.xml /usr/share/gtksourceview-4/styles/
 # sudo virsh net-autostart default
 # sudo virsh net-start default
 # virsh list --all
+
+
+# https://unix.stackexchange.com/questions/77127/rm-rf-all-files-and-all-hidden-files-without-error
+## find . -name . -o -prune -exec rm -rf -- {} +
