@@ -50,6 +50,7 @@ pulseaudio-nextsink
 sublime-text-4
 task-spooler
 brave-bin
+checkupdates-systemd-git
 # downgrade
 # reddio
 )
