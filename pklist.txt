@@ -18,6 +18,7 @@ broadcom-wl-dkms
 btrfs-progs
 calcurse
 clonezilla
+cmake
 conky
 cups
 cups-filters
@@ -112,6 +113,7 @@ man-pages
 mc
 meld
 mesa
+meson
 mkinitcpio-nfs-utils
 mlocate
 mobile-broadband-provider-info
@@ -154,6 +156,7 @@ pipewire-docs
 pipewire-jack
 pipewire-pulse
 polkit-gnome
+polybar
 poppler-glib
 poppler-qt5
 ppp
