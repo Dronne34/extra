@@ -144,7 +144,7 @@ cd $DIR
 ### root
 # rm -rf st-0.9/ dmenu/ dwm-6.4.1/ dwmblocks/
 sudo cp -rf $DIR/bin/30-touchpad.conf /usr/share/X11/xorg.conf.d/
-#sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
+sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/20-intel.conf /etc/X11/xorg.conf.d/
 sudo cp -rf $DIR/bin/pacman.conf /etc/
 sudo cp -rf $DIR/bin/backlight.rules /etc/udev/rules.d/
