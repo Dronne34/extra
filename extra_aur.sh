@@ -67,7 +67,7 @@ done
 
 echo -e "Install from AUR done" & sleep 1
 
-echo -e "Git Clone oh-my-zsh and tool" & sleep 1
+# echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 
 rm -rf ~/.config
 rm -rf ~/.fonts
@@ -87,7 +87,7 @@ cp -arf ~/.home/. ~/
 rm -rf ~/.home
 # cp -rf ~/default/ ~/.icons 
 # rm -rf ~/default
-echo -e "Install oh-my-zsh setup done!" & sleep 1
+# echo -e "Install oh-my-zsh setup done!" & sleep 1
 
 cd $DIR
 echo "Script executed from: ${PWD}"
@@ -134,8 +134,15 @@ sudo make install
 echo -e "Install st-0.9 done!" & sleep 1
 
 cd $DIR
+### clone and install st-0.9
+git clone --depth=1 https://github.com/Dronne34/dwmblocks
+cd $DIR_ST  
+sudo make install
+echo -e "Install dwmblocks done!" & sleep 1
+
+cd $DIR
 ### root
-rm -rf st-0.9/ dmenu/ dwm-6.4.1/
+# rm -rf st-0.9/ dmenu/ dwm-6.4.1/ dwmblocks/
 sudo cp -rf $DIR/bin/30-touchpad.conf /usr/share/X11/xorg.conf.d/
 #sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/20-intel.conf /etc/X11/xorg.conf.d/
