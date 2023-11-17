@@ -1,0 +1,13 @@
+abook
+alpine
+brave-bin
+checkupdates-systemd-git
+cyrus-sasl-xoauth2-git
+mutt-wizard
+newsup-git
+pam-gnupg
+pulseaudio-nextsink
+sublime-text-4
+task-spooler
+trizen
+urlview

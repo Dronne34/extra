@@ -23,6 +23,8 @@ conky
 cups
 cups-filters
 cups-pdf
+cyrus-sasl
+cyrus-sasl-gssapi
 dconf-editor
 ddrescue
 dhclient
@@ -82,6 +84,7 @@ intel-media-driver
 intel-ucode
 inxi
 irssi
+isync
 iw
 iwd
 jfsutils
@@ -108,6 +111,7 @@ lsscsi
 lvm2
 lxappearance
 lynx
+maim
 man-db
 man-pages
 mc
@@ -122,12 +126,15 @@ mousepad
 mpc
 mpd
 mpv
+msmtp
 mtools
 mtpfs
+mutt
 nano
 nbd
 ncmpcpp
 ndisc6
+neomutt
 net-tools
 newsboat
 nfs-utils
@@ -147,6 +154,7 @@ os-prober
 p7zip
 pamixer
 partimage
+pass
 pavucontrol
 pcsclite
 picom
@@ -163,6 +171,8 @@ ppp
 pptpclient
 pulsemixer
 pv
+python-gssapi
+python-pip
 python-pipx
 python-pyparted
 ranger
@@ -181,6 +191,7 @@ sg3_utils
 slop
 smartmontools
 sof-firmware
+speedtest-cli
 squashfs-tools
 streamlink
 sxhkd
@@ -212,6 +223,7 @@ urxvt-perls
 usb_modeswitch
 usbmuxd
 usbutils
+vim
 vpnc
 vulkan-intel
 vulkan-radeon
