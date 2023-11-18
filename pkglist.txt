@@ -7,6 +7,8 @@ arc-gtk-theme
 arch-install-scripts
 arc-icon-theme
 baobab
+base
+base-devel
 bash-completion
 bat
 bind
@@ -64,7 +66,6 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
-gstreamer
 gutenprint
 gvfs
 gvfs-afc
@@ -117,12 +118,12 @@ man-db
 man-pages
 mc
 meld
-mesa
 meson
 mkinitcpio-nfs-utils
 mlocate
 mobile-broadband-provider-info
 modemmanager
+mousepad
 mpc
 mpd
 mpv
@@ -244,9 +245,12 @@ xdg-user-dirs
 xdg-utils
 xdo
 xdotool
+xf86-video-amdgpu
+xf86-video-ati
 xf86-video-intel
 xf86-video-nouveau
 xf86-video-vesa
+xf86-video-vmware
 xfsprogs
 xorg-docs
 xorg-font-util
