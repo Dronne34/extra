@@ -14,6 +14,7 @@ bind
 bleachbit
 bluez
 bluez-utils
+bmon
 bridge-utils
 broadcom-wl-dkms
 btrfs-progs
@@ -22,6 +23,8 @@ clonezilla
 cmake
 code
 conky
+cowfortune
+cowsay
 cups
 cups-filters
 cups-pdf
