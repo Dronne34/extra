@@ -6,6 +6,7 @@ alsa-utils
 arc-gtk-theme
 arch-install-scripts
 arc-icon-theme
+awesome-terminal-fonts
 baobab
 bash-completion
 bat
@@ -167,6 +168,8 @@ polkit-gnome
 polybar
 poppler-glib
 poppler-qt5
+powerline
+powerline-fonts
 ppp
 pptpclient
 pulsemixer
