@@ -97,14 +97,12 @@ laptop-detect
 libdvdcss
 libfido2
 libgsf
-libguestfs
 libopenraw
 libpulse
 libpwquality
 libusb-compat
 libva-intel-driver
 libva-mesa-driver
-libvirt
 light
 links
 linux-firmware
