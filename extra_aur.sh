@@ -8,7 +8,9 @@ echo
 DIR=~/Github/extra
 DIR_DMENU=~/Github/extra/dmenu
 DIR_DWM=~/Github/extra/dwm-6.4.1
+DIR_DWB=~/Github/extra/dwmblocks
 DIR_ST=~/Github/extra/st-0.9
+
 
 BLUE='\033[38;5;4m'
 RED='\033[0;31m'
@@ -138,7 +140,7 @@ echo -e "Install st-0.9 done!" & sleep 1
 cd $DIR
 ### clone and install dwmblocks
 git clone --depth=1 https://github.com/Dronne34/dwmblocks
-cd $DIR_ST  
+cd $DIR_DWB  
 sudo make install
 echo -e "Install dwmblocks done!" & sleep 1
 
