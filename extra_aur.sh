@@ -48,11 +48,11 @@ echo  -e $GREEN"Trizen done" & sleep 1
 #Install from AUR
 echo -e "Install from AUR"  & sleep 1
 pkaur=(
-pulseaudio-nextsink
-sublime-text-4
-task-spooler
-brave-bin
-checkupdates-systemd-git
+# pulseaudio-nextsink
+# sublime-text-4
+# task-spooler
+# brave-bin
+# checkupdates-systemd-git
 # downgrade
 # reddio
 )
