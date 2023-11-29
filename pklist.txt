@@ -249,11 +249,13 @@ wvdial
 xapp
 xbindkeys
 xclip
+xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xdo
 xdotool
+xf86-video-amdgpu
 xf86-video-ati
 xf86-video-intel
 xf86-video-nouveau
@@ -303,6 +305,7 @@ xorg-xwud
 xterm
 yt-dlp
 ytfzf
+zabbix-agent
 zathura
 zathura-cb
 zathura-djvu
