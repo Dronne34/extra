@@ -7,7 +7,7 @@ echo
 #echo -e "\n"
 DIR=~/Github/extra
 DIR_DMENU=~/Github/extra/dmenu
-DIR_DWM=~/Github/extra/dwm-6.4.1
+DIR_DWM=~/Github/extra/dwm-6.4
 DIR_DWB=~/Github/extra/dwmblocks
 DIR_ST=~/Github/extra/st-0.9
 
@@ -118,10 +118,10 @@ echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 cd $DIR
 #### clone and install dwm-6.4
-git clone --depth=1 https://github.com/Dronne34/dwm-6.4.1
+git clone --depth=1 https://github.com/Dronne34/dwm-6.4
 cd $DIR_DWM 
 sudo make install
-echo -e "Install dwm-6.4.1 done!" & sleep 1
+echo -e "Install dwm-6.4 done!" & sleep 1
 
 cd $DIR
 ### clone and install dmenu
@@ -147,8 +147,8 @@ echo -e "Install dwmblocks done!" & sleep 1
 cd $DIR
 
 ### root
-cp -rf st-0.9/ dmenu/ dwm-6.4.1/ dwmblocks/ ~/Github
-rm -rf st-0.9/ dmenu/ dwm-6.4.1/ dwmblocks/
+cp -rf st-0.9/ dmenu/ dwm-6.4/ dwmblocks/ ~/Github
+rm -rf st-0.9/ dmenu/ dwm-6.4/ dwmblocks/
 sudo cp -rf $DIR/bin/30-touchpad.conf /usr/share/X11/xorg.conf.d/
 #sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/20-intel.conf /etc/X11/xorg.conf.d/
