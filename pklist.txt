@@ -146,6 +146,7 @@ nitrogen
 noto-fonts
 nss-mdns
 ntfs-3g
+nvim
 ntp
 numlockx
 nvme-cli
