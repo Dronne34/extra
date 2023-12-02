@@ -52,7 +52,7 @@ pkaur=(
 # sublime-text-4
 # task-spooler
 # brave-bin
-# checkupdates-systemd-git
+checkupdates-systemd-git
 # downgrade
 # reddio
 )
