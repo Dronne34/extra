@@ -23,7 +23,6 @@ calcurse
 chromium
 clonezilla
 cmake
-code
 conky
 cups
 cups-filters
