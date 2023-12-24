@@ -40,6 +40,7 @@ dnsmasq
 dosfstools
 duf
 dunst
+easytag
 efibootmgr
 ethtool
 expac
@@ -105,6 +106,7 @@ libva-intel-driver
 libva-mesa-driver
 light
 links
+linux
 linux-firmware
 linux-lts
 logrotate
@@ -117,8 +119,6 @@ lynx
 maim
 man-db
 man-pages
-mate-polkit
-mate-system-monitor
 mc
 meld
 mesa
@@ -167,6 +167,7 @@ pipewire-alsa
 pipewire-docs
 pipewire-jack
 pipewire-pulse
+polkit-gnome
 polybar
 poppler-glib
 poppler-qt5
@@ -186,6 +187,7 @@ refind
 reflector
 reiserfsprogs
 ripgrep
+rofi
 rp-pppoe
 rsync
 rxvt-unicode
@@ -214,9 +216,16 @@ thunar-volman
 tlp
 transmission-cli
 ttf-carlito
+ttf-cascadia-code
+ttf-cascadia-code-nerd
+ttf-cascadia-mono-nerd
 ttf-dejavu
 ttf-fantasque-nerd
 ttf-fantasque-sans-mono
+ttf-fira-code
+ttf-firacode-nerd
+ttf-fira-mono
+ttf-fira-sans
 ttf-font-awesome
 ttf-hack
 ttf-iosevka-nerd
