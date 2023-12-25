@@ -51,7 +51,7 @@ pkaur=(
 # pulseaudio-nextsink
 # sublime-text-4
 # task-spooler
-# brave-bin
+i3lock-color
 checkupdates-systemd-git
 # downgrade
 # reddio

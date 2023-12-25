@@ -56,7 +56,6 @@ geoip
 ghostscript
 git
 github-cli
-gnome-system-monitor
 gnu-netcat
 gpick
 grub
@@ -82,7 +81,6 @@ highlight
 htop
 hwinfo
 hyperv
-i3lock
 imagemagick
 iniparser
 intel-media-driver
@@ -167,7 +165,6 @@ pipewire-alsa
 pipewire-docs
 pipewire-jack
 pipewire-pulse
-polybar
 poppler-glib
 poppler-qt5
 powerline
