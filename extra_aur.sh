@@ -156,7 +156,9 @@ sudo cp -rf $DIR/bin/pacman.conf /etc/
 # sudo cp -rf $DIR/bin/oblivion.xml /usr/share/gtksourceview-4/styles/
 sudo cp -rf $DIR/bin/backlight.rules /etc/udev/rules.d/
 sudo cp -rf $DIR/bin/dpms.conf /etc/X11/xorg.conf.d/
+sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
 ### System service
+sudo systemctl enable wakelock@dell --now
 #sudo systemctl enable bluetooth-disable-before-sleep.service
 #sudo systemctl enable bluetooth
 #sudo systemctl start bluetooth
