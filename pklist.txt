@@ -299,7 +299,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xss-lock
+xautolock
 xterm
 yt-dlp
 ytfzf
