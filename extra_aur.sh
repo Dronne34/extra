@@ -157,6 +157,8 @@ sudo cp -rf $DIR/bin/pacman.conf /etc/
 sudo cp -rf $DIR/bin/backlight.rules /etc/udev/rules.d/
 sudo cp -rf $DIR/bin/dpms.conf /etc/X11/xorg.conf.d/
 sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
+sudo cp -rf $DIR/bin/vconsole.conf /etc/
+
 ### System service
 sudo systemctl enable wakelock@dell --now
 #sudo systemctl enable bluetooth-disable-before-sleep.service
