@@ -244,6 +244,7 @@ wmctrl
 wpa_supplicant
 wvdial
 xapp
+xautolock
 xbindkeys
 xclip
 xdg-desktop-portal-gtk
@@ -299,7 +300,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-xautolock
+xss-lock
 xterm
 yt-dlp
 ytfzf

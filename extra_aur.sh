@@ -71,10 +71,10 @@ echo -e "Install from AUR done" & sleep 1
 
 echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 
-rm -rf ~/.config
+# rm -rf ~/.config
 rm -rf ~/.fonts
 rm -rf ~/.fzf
-git clone --depth=1 https://github.com/Dronne34/config ~/.config
+# git clone --depth=1 https://github.com/Dronne34/config ~/.config
 # git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
 git clone --depth=1 https://github.com/Dronne34/home ~/.home
 git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -163,7 +163,7 @@ sudo cp -rf $DIR/bin/vconsole.conf /etc/
 sudo systemctl enable wakelock@dell --now
 #sudo systemctl enable bluetooth-disable-before-sleep.service
 #sudo systemctl enable bluetooth
-#sudo systemctl start bluetooth
+#sudo systemctl staTERMMODrt bluetooth
 
 # sudo systemctl enable libvirtd
 # sudo usermod -G libvirt -a $USER
