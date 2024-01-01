@@ -160,7 +160,8 @@ sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/vconsole.conf /etc/
 
 ### System service
-sudo systemctl enable wakelock@dell --now
+sudo systemctl start  man-db.service
+#sudo systemctl enable wakelock@dell --now
 #sudo systemctl enable bluetooth-disable-before-sleep.service
 #sudo systemctl enable bluetooth
 #sudo systemctl start bluetooth
