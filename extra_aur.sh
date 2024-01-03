@@ -153,11 +153,12 @@ sudo cp -rf $DIR/bin/30-touchpad.conf /usr/share/X11/xorg.conf.d/
 #sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/20-intel.conf /etc/X11/xorg.conf.d/
 sudo cp -rf $DIR/bin/pacman.conf /etc/
-# sudo cp -rf $DIR/bin/oblivion.xml /usr/share/gtksourceview-4/styles/
+sudo cp -rf $DIR/bin/oblivion.xml /usr/share/gtksourceview-4/styles/
 sudo cp -rf $DIR/bin/backlight.rules /etc/udev/rules.d/
 sudo cp -rf $DIR/bin/dpms.conf /etc/X11/xorg.conf.d/
 sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/vconsole.conf /etc/
+sudo cp -rf ~/.local/bin/pfetch /usr/bin/
 
 ### System service
 sudo systemctl start  man-db.service

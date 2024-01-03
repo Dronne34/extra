@@ -125,6 +125,7 @@ mkinitcpio-nfs-utils
 mlocate
 mobile-broadband-provider-info
 modemmanager
+mousepad
 mpc
 mpd
 mpv
@@ -202,6 +203,7 @@ sxiv
 syslinux
 system-config-printer
 tcpdump
+telegram-desktop
 terminus-font
 testdisk
 the_silver_searcher
@@ -259,6 +261,7 @@ xf86-video-intel
 xf86-video-nouveau
 xf86-video-vesa
 xf86-video-vmware
+xfce4-power-manager
 xfsprogs
 xorg-bdftopcf
 xorg-docs
