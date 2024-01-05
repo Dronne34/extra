@@ -4,9 +4,9 @@ Before=sleep.target suspend.target
 
 [Service]
 User=%i
-Type=forking
+Type=simple
 Environment=DISPLAY=:0
-ExecStart=/home/%i/.local/bin/lock
+ExecStart=/home/%i/.local/bin/betterlocksceen -l
 
 [Install]
 WantedBy=sleep.target suspend.target
