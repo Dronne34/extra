@@ -101,6 +101,7 @@ libpwquality
 libusb-compat
 libva-intel-driver
 libva-mesa-driver
+light
 links
 linux-firmware
 linux-lts
