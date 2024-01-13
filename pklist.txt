@@ -7,9 +7,6 @@ arc-gtk-theme
 arch-install-scripts
 arc-icon-theme
 awesome-terminal-fonts
-base
-base-devel
-bash-completion
 bat
 bind
 bleachbit
@@ -40,7 +37,6 @@ dnsmasq
 dosfstools
 duf
 dunst
-efibootmgr
 ethtool
 expac
 f2fs-tools
@@ -54,7 +50,6 @@ fzf
 garcon
 geoip
 ghostscript
-git
 github-cli
 gnu-netcat
 gpick
@@ -83,13 +78,10 @@ hwinfo
 hyperv
 imagemagick
 iniparser
-intel-media-driver
-intel-ucode
 inxi
 irssi
 isync
 iw
-iwd
 jfsutils
 laptop-detect
 libdvdcss
@@ -99,11 +91,7 @@ libopenraw
 libpulse
 libpwquality
 libusb-compat
-libva-intel-driver
-libva-mesa-driver
 links
-linux-firmware
-linux-lts
 logrotate
 lsb-release
 lsd
@@ -118,7 +106,6 @@ mate-polkit
 mate-system-monitor
 mc
 meld
-mesa
 meson
 mkinitcpio-nfs-utils
 mlocate
@@ -203,7 +190,6 @@ syslinux
 system-config-printer
 tcpdump
 telegram-desktop
-terminus-font
 testdisk
 the_silver_searcher
 thunar
@@ -231,13 +217,9 @@ urxvt-perls
 usb_modeswitch
 usbmuxd
 usbutils
-vim
 vpnc
-vulkan-intel
-vulkan-radeon
 w3m
 webkit2gtk
-wget
 wireless-regdb
 wireless_tools
 wireplumber
@@ -254,12 +236,8 @@ xdg-user-dirs
 xdg-utils
 xdo
 xdotool
-xf86-video-amdgpu
-xf86-video-ati
 xf86-video-intel
-xf86-video-nouveau
 xf86-video-vesa
-xf86-video-vmware
 xfce4-power-manager
 xfsprogs
 xorg-bdftopcf
@@ -269,7 +247,6 @@ xorg-fonts-75dpi
 xorg-font-util
 xorg-iceauth
 xorg-mkfontscale
-xorg-server
 xorg-server-devel
 xorg-server-xephyr
 xorg-server-xnest
@@ -285,7 +262,6 @@ xorg-xdriinfo
 xorg-xev
 xorg-xgamma
 xorg-xhost
-xorg-xinit
 xorg-xinput
 xorg-xkbevd
 xorg-xkbprint
