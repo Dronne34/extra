@@ -187,11 +187,6 @@ sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/vconsole.conf /etc/
 sudo cp -rf ~/.local/bin/pfetch /usr/bin/
 
-<<<<<<< HEAD
-#betterlockscreen -u .config/screen/road_marking_bridge.jpg
-
-=======
->>>>>>> b8431aa3a45a593b5ce059439065dd3a6fad38fb
 ### System service
 sudo systemctl start  man-db.service
 #sudo systemctl enable wakelock@dell --now
@@ -200,11 +195,13 @@ sudo systemctl start  man-db.service
 #sudo systemctl start bluetooth
 
 # sudo systemctl enable libvirtd
+# sudo systemctl start libvirtd
 # sudo usermod -G libvirt -a $USER
 # sudo virsh net-autostart default
 # sudo virsh net-start default
 # virsh list --all
 
-
+# Todo #
+# betterlockscreen -u .config/screen/road_marking_bridge.jpg
 # https://unix.stackexchange.com/questions/77127/rm-rf-all-files-and-all-hidden-files-without-error
 ## find . -name . -o -prune -exec rm -rf -- {} +
