@@ -187,11 +187,6 @@ sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/vconsole.conf /etc/
 sudo cp -rf ~/.local/bin/pfetch /usr/bin/
 
-<<<<<<< HEAD
-#betterlockscreen -u .config/screen/road_marking_bridge.jpg
-
-=======
->>>>>>> b8431aa3a45a593b5ce059439065dd3a6fad38fb
 ### System service
 sudo systemctl start  man-db.service
 #sudo systemctl enable wakelock@dell --now
