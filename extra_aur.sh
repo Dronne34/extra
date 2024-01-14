@@ -160,7 +160,7 @@ sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/vconsole.conf /etc/
 sudo cp -rf ~/.local/bin/pfetch /usr/bin/
 
-betterlockscreen -u .config/screen/road_marking_bridge.jpg
+#betterlockscreen -u .config/screen/road_marking_bridge.jpg
 
 ### System service
 sudo systemctl start  man-db.service
