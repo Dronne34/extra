@@ -1,18 +1,7 @@
-# #!/usr/bin/env bash
-# pklist="${PWD%/}/pklist"
-# for package in "${pklist[@]}"; do
-#     if ! pacman -Qqe "$pklist" &>/dev/null; then
-#         echo -e "Installing $package..."
-#         sudo pacman -U --noconfirm "$pklist"
-#     else
-#         echo -e "$pklist --> From Core, Extra is already installed. Skipping."
-#     fi
-# done
-
 #!/bin/bash
 
 # Define the list of packages to install
-packages=("${PWD%/}/pklist")
+packages=($(<"${PWD%/}/pklist"))
 
 # Loop through each package
 for package in "${packages[@]}"; do
@@ -27,3 +16,4 @@ for package in "${packages[@]}"; do
 done
 
 echo "Package installation complete."
+
