@@ -1,2 +1,0 @@
-[2024-01-14T07:53:50+0200] [PACMAN] Running 'pacman -S --color always --logfile log.txt qbittorrent'
-[2024-01-14T07:56:57+0200] [PACMAN] Running 'pacman -S --color always --logfile log.txt --needed qbittorrent'
