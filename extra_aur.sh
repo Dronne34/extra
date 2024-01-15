@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo  
 tput setaf 3
-echo "Installing packages from pklist!" & sleep 1
+echo "Installing packages from pklist!"
 tput sgr0
 echo
 #echo -e "\n"
@@ -27,15 +27,15 @@ GREEN='\033[0;32m'
 # tput setaf 8 = light blue
 
 sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
-echo  -e $GREEN"Installing packages done! \n"  & sleep 1
+echo  -e $GREEN"Installing packages done! \n" 
 xdg-user-dirs-update --force
 #sudo pacman-key --init
 #sudo pacman-key --populate
 #sudo reflector --latest 5 --country France,Germany --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 # Install trizen
-echo  -e $GREEN"Clone trizen for install! \n"  & sleep 1
-echo  -e $RED"Remove older folder! \n"  & sleep 1
+echo  -e $GREEN"Clone trizen for install! \n"  
+echo  -e $RED"Remove older folder! \n" 
 cd /tmp
 rm -rf trizen
 git clone https://aur.archlinux.org/trizen.git 
@@ -43,10 +43,10 @@ cd /tmp/trizen
 makepkg -fsi --noconfirm
 rm -rf /tmp/trizen
 cd
-echo  -e $GREEN"Trizen done" & sleep 1
+echo  -e $GREEN"Trizen done" 
 
 #Install from AUR
-echo -e "Install from AUR"  & sleep 1
+echo -e "Install from AUR"  
 pkaur=(
 # pulseaudio-nextsink
 # sublime-text-4
