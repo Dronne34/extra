@@ -26,8 +26,71 @@ GREEN='\033[0;32m'
 # tput setaf 7 = gray
 # tput setaf 8 = light blue
 
-sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
-echo  -e $GREEN"Installing packages done! \n"  & sleep 1
+# Define the list of packages to install
+installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
+
+func_install() {
+    if pacman -Qi $1 &> /dev/null; then
+        tput setaf 2
+        echo "###############################################################################"
+        echo "################## The package "$1" is already installed"
+        echo "###############################################################################"
+        echo
+        tput sgr0
+    else
+        tput setaf 3
+        echo "###############################################################################"
+        echo "##################  Installing package "  $1
+        echo "###############################################################################"
+        echo
+        tput sgr0
+        sudo pacman -S --noconfirm --needed $1
+    fi
+}
+
+func_install_pkg() {
+
+    echo
+    tput setaf 2
+    echo "################################################################"
+    echo "################### Install from pklist"
+    echo "################################################################"
+    tput sgr0
+    echo
+
+    list=($(<"${PWD%/}/pklist.txt"))
+
+    count=0
+
+    for name in "${list[@]}" ; do
+        count=$[count+1]
+        tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+        func_install $name
+    done
+}
+
+if grep -q 'NAME="Arch Linux"' /etc/os-release; then
+
+    echo
+    tput setaf 2
+    echo "################################################################"
+    echo "################### We are on Arch Linux"
+    echo "################################################################"
+    tput sgr0
+    echo
+
+    func_install_pkg
+
+    echo
+    tput setaf 6
+    echo "################################################################"
+    echo "################### Done"
+    echo "################################################################"
+    tput sgr0
+    echo
+
+fi
+
 xdg-user-dirs-update --force
 #sudo pacman-key --init
 #sudo pacman-key --populate
@@ -74,16 +137,16 @@ echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 rm -rf ~/.config
 rm -rf ~/.fonts
 rm -rf ~/.fzf
-git clone --depth 1 https://github.com/Dronne34/config ~/.config
-# git clone --depth 1 https://github.com/Dronne34/font ~/.fonts
-git clone --depth 1 https://github.com/Dronne34/home ~/.home
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+git clone --depth=1 https://github.com/Dronne34/config ~/.config
+# git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
+git clone --depth=1 https://github.com/Dronne34/home ~/.home
+git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
 
-git clone --depth 1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone --depth 1 https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth 1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --depth=1 https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 cp -arf ~/.home/. ~/ 
 cp -rf ~/.home/ ~/Github/home
@@ -118,28 +181,28 @@ echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 cd $DIR
 #### clone and install dwm-6.4
-git clone --depth 1 https://github.com/Dronne34/dwm-6.4
+git clone --depth=1 https://github.com/Dronne34/dwm-6.4
 cd $DIR_DWM 
 sudo make install
 echo -e "Install dwm-6.4 done!" & sleep 1
 
 cd $DIR
 ### clone and install dmenu
-git clone --depth 1 https://github.com/Dronne34/dmenu-5.2
+git clone --depth=1 https://github.com/Dronne34/dmenu-5.2
 cd $DIR_DMENU 
 sudo make install
 echo -e "Install dmenu done!" & sleep 1
 
 cd $DIR
 ### clone and install st-0.9
-git clone --depth 1 https://github.com/Dronne34/st-0.9
+git clone --depth=1 https://github.com/Dronne34/st-0.9
 cd $DIR_ST  
 sudo make install
 echo -e "Install st-0.9 done!" & sleep 1
 
 cd $DIR
 ### clone and install dwmblocks
-git clone --depth 1 https://github.com/Dronne34/dwmblocks
+git clone --depth=1 https://github.com/Dronne34/dwmblocks
 cd $DIR_DWB  
 sudo make install
 echo -e "Install dwmblocks done!" & sleep 1
