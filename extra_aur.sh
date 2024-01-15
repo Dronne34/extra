@@ -27,21 +27,69 @@ GREEN='\033[0;32m'
 # tput setaf 8 = light blue
 
 # Define the list of packages to install
-packages=($(<"${PWD%/}/pklist"))
+installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
-# Loop through each package
-for package in "${packages[@]}"; do
-    # Check if the package is already installed
-    if pacman -Qi "$package" &> /dev/null; then
-        echo "$package is already installed. Skipping..."
+func_install() {
+    if pacman -Qi $1 &> /dev/null; then
+        tput setaf 2
+        echo "###############################################################################"
+        echo "################## The package "$1" is already installed"
+        echo "###############################################################################"
+        echo
+        tput sgr0
     else
-        # Install the package if not installed
-        echo "Installing $package..."
-        sudo pacman -S --noconfirm "$package"
+        tput setaf 3
+        echo "###############################################################################"
+        echo "##################  Installing package "  $1
+        echo "###############################################################################"
+        echo
+        tput sgr0
+        sudo pacman -S --noconfirm --needed $1
     fi
-done
+}
 
-echo  -e $GREEN"Installing packages done! \n"  & sleep 1
+func_install_pkg() {
+
+    echo
+    tput setaf 2
+    echo "################################################################"
+    echo "################### Install from pklist"
+    echo "################################################################"
+    tput sgr0
+    echo
+
+    list=($(<"${PWD%/}/pklist"))
+
+    count=0
+
+    for name in "${list[@]}" ; do
+        count=$[count+1]
+        tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
+        func_install $name
+    done
+}
+
+if grep -q 'NAME="Arch Linux"' /etc/os-release; then
+
+    echo
+    tput setaf 2
+    echo "################################################################"
+    echo "################### We are on Arch Linux"
+    echo "################################################################"
+    tput sgr0
+    echo
+
+    func_install_pkg
+
+    echo
+    tput setaf 6
+    echo "################################################################"
+    echo "################### Done"
+    echo "################################################################"
+    tput sgr0
+    echo
+
+fi
 
 xdg-user-dirs-update --force
 #sudo pacman-key --init

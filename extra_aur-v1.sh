@@ -74,16 +74,16 @@ echo -e "Git Clone oh-my-zsh and tool" & sleep 1
 rm -rf ~/.config
 rm -rf ~/.fonts
 rm -rf ~/.fzf
-git clone --depth=1 https://github.com/Dronne34/config ~/.config
-# git clone --depth=1 https://github.com/Dronne34/font ~/.fonts
-git clone --depth=1 https://github.com/Dronne34/home ~/.home
-git clone --depth=1 https://github.com/junegunn/fzf.git ~/.fzf
+git clone --depth 1 https://github.com/Dronne34/config ~/.config
+# git clone --depth 1 https://github.com/Dronne34/font ~/.fonts
+git clone --depth 1 https://github.com/Dronne34/home ~/.home
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
-git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone --depth=1 https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone --depth 1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --depth 1 https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
+git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone --depth 1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 cp -arf ~/.home/. ~/ 
 cp -rf ~/.home/ ~/Github/home
@@ -118,28 +118,28 @@ echo -e "Install cursor Bibata-Modern-Ice done!" & sleep 1
 
 cd $DIR
 #### clone and install dwm-6.4
-git clone --depth=1 https://github.com/Dronne34/dwm-6.4
+git clone --depth 1 https://github.com/Dronne34/dwm-6.4
 cd $DIR_DWM 
 sudo make install
 echo -e "Install dwm-6.4 done!" & sleep 1
 
 cd $DIR
 ### clone and install dmenu
-git clone --depth=1 https://github.com/Dronne34/dmenu-5.2
+git clone --depth 1 https://github.com/Dronne34/dmenu-5.2
 cd $DIR_DMENU 
 sudo make install
 echo -e "Install dmenu done!" & sleep 1
 
 cd $DIR
 ### clone and install st-0.9
-git clone --depth=1 https://github.com/Dronne34/st-0.9
+git clone --depth 1 https://github.com/Dronne34/st-0.9
 cd $DIR_ST  
 sudo make install
 echo -e "Install st-0.9 done!" & sleep 1
 
 cd $DIR
 ### clone and install dwmblocks
-git clone --depth=1 https://github.com/Dronne34/dwmblocks
+git clone --depth 1 https://github.com/Dronne34/dwmblocks
 cd $DIR_DWB  
 sudo make install
 echo -e "Install dwmblocks done!" & sleep 1
@@ -168,11 +168,13 @@ sudo systemctl start  man-db.service
 #sudo systemctl start bluetooth
 
 # sudo systemctl enable libvirtd
+# sudo systemctl start libvirtd
 # sudo usermod -G libvirt -a $USER
 # sudo virsh net-autostart default
 # sudo virsh net-start default
 # virsh list --all
 
-
+# Todo #
+# betterlockscreen -u .config/screen/road_marking_bridge.jpg
 # https://unix.stackexchange.com/questions/77127/rm-rf-all-files-and-all-hidden-files-without-error
-## find . -name . -o -prune -exec rm -rf -- {} +
+# find . -name . -o -prune -exec rm -rf -- {} +
