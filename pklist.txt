@@ -212,7 +212,9 @@ the_silver_searcher
 thunar
 thunar-archive-plugin
 thunar-volman
+tldr
 tlp
+tmux
 transmission-cli
 ttf-carlito
 ttf-dejavu
@@ -253,6 +255,7 @@ xapp
 xautolock
 xbindkeys
 xclip
+xcolor
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
