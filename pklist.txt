@@ -5,6 +5,7 @@ alsa-plugins
 alsa-utils
 arc-gtk-theme
 arch-install-scripts
+arch-wiki-docs
 arc-icon-theme
 awesome-terminal-fonts
 base
@@ -168,6 +169,7 @@ pipewire-alsa
 pipewire-docs
 pipewire-jack
 pipewire-pulse
+pkgstats
 poppler-glib
 poppler-qt5
 powerline
@@ -181,6 +183,7 @@ python-gssapi
 python-pip
 python-pipx
 python-pyparted
+qutebrowser
 ranger
 refind
 reflector
