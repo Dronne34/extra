@@ -47,7 +47,6 @@ expac
 f2fs-tools
 fatresize
 feh
-ffmpegthumbnailer
 file-roller
 font-manager
 fsarchiver
@@ -105,6 +104,7 @@ libpwquality
 libusb-compat
 libva-intel-driver
 libva-mesa-driver
+libva-utils
 links
 linux-firmware
 linux-lts
@@ -212,7 +212,6 @@ telegram-desktop
 terminus-font
 testdisk
 the_silver_searcher
-thunar
 thunar-archive-plugin
 thunar-volman
 tldr
@@ -239,6 +238,7 @@ urxvt-perls
 usb_modeswitch
 usbmuxd
 usbutils
+vdpauinfo
 vim
 vivaldi
 vivaldi-ffmpeg-codecs
