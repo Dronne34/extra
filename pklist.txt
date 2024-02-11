@@ -7,6 +7,7 @@ arc-gtk-theme
 arch-install-scripts
 arch-wiki-docs
 arc-icon-theme
+atool
 awesome-terminal-fonts
 base
 base-devel
@@ -239,6 +240,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 vdpauinfo
+vifm
 vim
 vivaldi
 vivaldi-ffmpeg-codecs

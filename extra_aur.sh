@@ -9,7 +9,7 @@ DIR=~/Github/extra
 DIR_DMENU=~/Github/extra/dmenu-5.2
 DIR_DWM=~/Github/extra/dwm-6.4
 DIR_DWB=~/Github/extra/dwmblocks
-DIR_ST=~/Github/extra/st-0.9
+DIR_ST=~/Github/extra/st
 
 
 BLUE='\033[38;5;4m'
@@ -132,10 +132,10 @@ echo -e "Install dmenu done!" & sleep 1
 
 cd $DIR
 ### clone and install st-0.9
-git clone --depth 1 https://github.com/Dronne34/st-0.9
+git clone --depth 1 https://github.com/Dronne34/st
 cd $DIR_ST  
 sudo make install
-echo -e "Install st-0.9 done!" & sleep 1
+echo -e "Install st-terminal done!" & sleep 1
 
 cd $DIR
 ### clone and install dwmblocks
@@ -147,8 +147,8 @@ echo -e "Install dwmblocks done!" & sleep 1
 cd $DIR
 
 ### root
-cp -rf st-0.9/ dmenu-5.2/ dwm-6.4/ dwmblocks/ ~/Github
-rm -rf st-0.9/ dmenu-5.2/ dwm-6.4/ dwmblocks/
+cp -rf st/ dmenu-5.2/ dwm-6.4/ dwmblocks/ ~/Github
+rm -rf st/ dmenu-5.2/ dwm-6.4/ dwmblocks/
 sudo cp -rf $DIR/bin/30-touchpad.conf /usr/share/X11/xorg.conf.d/
 #sudo cp -rf $DIR/bin/bluetooth-disable-before-sleep.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/20-intel.conf /etc/X11/xorg.conf.d/
