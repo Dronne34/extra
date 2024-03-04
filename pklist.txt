@@ -136,12 +136,11 @@ mpv
 msmtp
 mtools
 mtpfs
-mutt
+mupdf
 nano
 nbd
 ncmpcpp
 ndisc6
-neomutt
 net-tools
 newsboat
 nfs-utils

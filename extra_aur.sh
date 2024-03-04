@@ -178,3 +178,10 @@ sudo systemctl start  man-db.service
 # betterlockscreen -u .config/screen/road_marking_bridge.jpg
 # https://unix.stackexchange.com/questions/77127/rm-rf-all-files-and-all-hidden-files-without-error
 # find . -name . -o -prune -exec rm -rf -- {} +
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+
+
+
+ 
