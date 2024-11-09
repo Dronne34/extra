@@ -261,7 +261,6 @@ xbindkeys
 xclip
 xcolor
 xdg-desktop-portal-gtk
-xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xdo
