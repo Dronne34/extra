@@ -21,6 +21,7 @@ grub
 gvfs
 gvfs-mtp
 gvfs-nfs
+htop
 intel-media-driver
 intel-ucode
 iwd
@@ -76,6 +77,7 @@ upower
 urxvt-perls
 vim
 vulkan-intel
+wget
 wireplumber
 wireplumber-docs
 wmctrl
