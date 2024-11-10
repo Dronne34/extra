@@ -17,10 +17,12 @@ efibootmgr
 feh
 file-roller
 git
+github-cli
 grub
 gvfs
 gvfs-mtp
 gvfs-nfs
+highlight
 htop
 intel-media-driver
 intel-ucode
@@ -29,6 +31,7 @@ less
 libva-intel-driver
 linux-firmware
 linux-lts
+lsd
 lxappearance
 man-db
 mate-polkit
@@ -43,6 +46,7 @@ newsboat
 nitrogen
 noto-fonts
 noto-fonts-emoji
+p7zip
 pamixer
 pavucontrol
 picom
@@ -73,6 +77,8 @@ ttf-jetbrains-mono-nerd
 ttf-mononoki-nerd
 tumbler
 ueberzug
+unace
+unrar
 upower
 urxvt-perls
 vim
@@ -85,6 +91,7 @@ xclip
 xdotool
 xf86-video-intel
 xf86-video-vesa
+xfsprogs
 xorg-bdftopcf
 xorg-docs
 xorg-fonts-100dpi
