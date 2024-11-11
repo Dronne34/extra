@@ -212,6 +212,7 @@ telegram-desktop
 terminus-font
 testdisk
 the_silver_searcher
+thunar
 thunar-archive-plugin
 thunar-volman
 tldr
