@@ -28,6 +28,8 @@ cmake
 conky
 cups
 cups-filters
+cmatrix
+code
 cups-pdf
 cyrus-sasl
 cyrus-sasl-gssapi
@@ -95,6 +97,7 @@ iw
 iwd
 jfsutils
 kdb
+less
 laptop-detect
 libdvdcss
 libfido2
@@ -139,6 +142,7 @@ mtpfs
 mupdf
 nano
 nbd
+noto-fonts-emoji
 ncmpcpp
 ndisc6
 net-tools
