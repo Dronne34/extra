@@ -145,12 +145,14 @@ nbd
 noto-fonts-emoji
 ncmpcpp
 ndisc6
+neovim
 net-tools
 newsboat
 nfs-utils
 nilfs-utils
 nitrogen
 noto-fonts
+noto-fonts-emoji
 nss-mdns
 ntfs-3g
 ntp
@@ -174,6 +176,7 @@ pipewire-docs
 pipewire-jack
 pipewire-pulse
 pkgstats
+plocate
 poppler-glib
 poppler-qt5
 powerline
@@ -193,6 +196,7 @@ refind
 reflector
 reiserfsprogs
 ripgrep
+rofi
 rp-pppoe
 rsync
 rxvt-unicode
@@ -263,6 +267,8 @@ xautolock
 xbindkeys
 xclip
 xcolor
+xdg-user-dirs
+xdg-user-dirs-gtk
 xdo
 xdotool
 xf86-video-intel
