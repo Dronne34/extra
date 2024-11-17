@@ -160,7 +160,7 @@ sudo cp -rf $DIR/bin/wakelock@.service /etc/systemd/system/
 sudo cp -rf $DIR/bin/vconsole.conf /etc/
 sudo cp -rf ~/.local/bin/pfetch /usr/bin/
 sudo cp -rf ~/.local/bin/dmenu_run_history /usr/local/bin/
-
+sudo cp -rf .local/bin/dm-power /usr/local/bin/
 
 ### System service
 sudo systemctl start  man-db.service
