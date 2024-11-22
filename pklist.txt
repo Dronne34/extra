@@ -53,6 +53,7 @@ feh
 font-manager
 fsarchiver
 fzf
+file-roller
 garcon
 geoip
 ghostscript
@@ -316,7 +317,6 @@ xorg-xwininfo
 xorg-xwud
 xss-lock
 xterm
-xarchiver
 yt-dlp
 ytfzf
 zabbix-agent
