@@ -25,11 +25,11 @@ calcurse
 chromium
 clonezilla
 cmake
+cmatrix
+code
 conky
 cups
 cups-filters
-cmatrix
-code
 cups-pdf
 cyrus-sasl
 cyrus-sasl-gssapi
@@ -50,6 +50,7 @@ expac
 f2fs-tools
 fatresize
 feh
+file-roller
 font-manager
 fsarchiver
 fzf
@@ -97,8 +98,8 @@ iw
 iwd
 jfsutils
 kdb
-less
 laptop-detect
+less
 libdvdcss
 libfido2
 libgsf
@@ -109,6 +110,7 @@ libusb-compat
 libva-intel-driver
 libva-mesa-driver
 libva-utils
+libadwaita
 links
 linux-firmware
 linux-lts
