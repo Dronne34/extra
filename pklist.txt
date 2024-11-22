@@ -147,7 +147,6 @@ nbd
 noto-fonts-emoji
 ncmpcpp
 ndisc6
-neovim
 net-tools
 newsboat
 nfs-utils
