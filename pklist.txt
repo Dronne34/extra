@@ -50,11 +50,9 @@ expac
 f2fs-tools
 fatresize
 feh
-file-roller
 font-manager
 fsarchiver
 fzf
-file-roller
 garcon
 geoip
 ghostscript
@@ -100,6 +98,7 @@ jfsutils
 kdb
 laptop-detect
 less
+libadwaita
 libdvdcss
 libfido2
 libgsf
@@ -110,7 +109,6 @@ libusb-compat
 libva-intel-driver
 libva-mesa-driver
 libva-utils
-libadwaita
 links
 linux-firmware
 linux-lts
@@ -208,6 +206,7 @@ sdparm
 sg3_utils
 slop
 smartmontools
+socat
 sof-firmware
 speedtest-cli
 squashfs-tools
@@ -243,6 +242,7 @@ udiskie
 ueberzug
 unace
 unrar
+unzip
 upower
 urxvt-perls
 usb_modeswitch
@@ -261,13 +261,17 @@ wireless-regdb
 wireless_tools
 wireplumber
 wmctrl
+wmenu
+wofi
 wpa_supplicant
 wvdial
 xapp
+xarchiver
 xautolock
 xbindkeys
 xclip
 xcolor
+xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdo
