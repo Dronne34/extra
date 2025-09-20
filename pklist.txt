@@ -213,6 +213,8 @@ system-config-printer
 tcpdump
 telegram-desktop
 terminus-font
+tesseract
+tesseract-data-eng
 testdisk
 the_silver_searcher
 thunar
