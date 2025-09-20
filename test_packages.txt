@@ -1,0 +1,10 @@
+accountsservice
+alacritty
+alsa-firmware
+alsa-plugins
+alsa-utils
+arc-gtk-theme
+arch-install-scripts
+arch-wiki-docs
+arc-icon-theme
+atool

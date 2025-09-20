@@ -1,0 +1,25 @@
+=== RAPORT VERIFICARE PACHETE ARCH LINUX ===
+Data verificării: Sat Sep 20 08:23:59 EEST 2025
+Total pachete verificate: 334
+Pachete valide: 325
+Pachete nevalide: 9
+Rata de validitate: 97%
+
+=== PACHETE NEVALIDE ===
+arc-gtk-theme
+arc-icon-theme
+gnu-netcat
+libva-mesa-driver
+mlocate
+p7zip
+reiserfsprogs
+ttf-font-awesome
+xautolock
+
+=== PACHETE CARE NECESITĂ VERIFICARE MANUALĂ ===
+Pentru pachete nevalide, verificați:
+1. Redenumite: 'package-name' -> 'package_name' sau invers
+2. Mutate în AUR: https://aur.archlinux.org/
+3. Eliminate/deprecated din repository-uri oficiale
+4. Înlocuite cu alte pachete similare
+5. Erori de scriere în lista originală

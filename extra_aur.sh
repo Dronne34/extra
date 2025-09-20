@@ -26,6 +26,12 @@ GREEN='\033[0;32m'
 # tput setaf 7 = gray
 # tput setaf 8 = light blue
 
+# Adăugare error handling
+set -e  # Exit on any error
+
+# Verificare prerequisite
+command -v git >/dev/null 2>&1 || { echo "Git not installed"; exit 1; }
+
 sudo pacman -S --needed --noconfirm - < "${PWD%/}/pklist.txt"
 echo  -e $GREEN"Installing packages done! \n" 
 xdg-user-dirs-update --force
@@ -186,4 +192,4 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 
 
- 
+

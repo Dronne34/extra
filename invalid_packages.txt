@@ -1,0 +1,9 @@
+arc-gtk-theme
+arc-icon-theme
+gnu-netcat
+libva-mesa-driver
+mlocate
+p7zip
+reiserfsprogs
+ttf-font-awesome
+xautolock

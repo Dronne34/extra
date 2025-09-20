@@ -1,5 +1,7 @@
 abook
 alpine
+arc-gtk-theme
+arc-icon-theme
 brave-bin
 checkupdates-systemd-git
 cyrus-sasl-xoauth2-git
